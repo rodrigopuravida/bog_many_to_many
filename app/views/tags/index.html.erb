@@ -1,0 +1,10 @@
+<h1>Tags</h1>
+
+<% @tags.each do |tag| %>
+<div class="well">
+  <h2>#<%= link_to tag.name, tag %>
+
+  <%= link_to 'Delete', tag, method: :delete, confirm: 'Are you sure?', class: 'btn btn-danger btn-xs glyphicon glyphicon-trash pull-right' %>
+</h2>
+</div>
+<% end %>
